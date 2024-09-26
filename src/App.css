@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,48 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+.indicator-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.indicator-button {
+  padding: 10px 20px;
+  border: 2px solid #333;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.indicator-button.active {
+  background-color: #333;
+  color: white;
+}
+
+.indicator-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styles for the uploaded image preview */
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+.paper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
