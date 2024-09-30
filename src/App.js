@@ -1,24 +1,23 @@
+import React from 'react';
 import './App.css';
-import UploadComponent from './Components/Upload';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Signup from './Components/SignupForm';
+import Login from './Components/LoginForm';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-   <UploadComponent></UploadComponent>
+      
+    <BrowserRouter>
+    
+    <Routes>
+      <Route path='/' element={<Signup></Signup>}></Route>
+      <Route  path='/Login' element={<Login></Login>}></Route>
+    </Routes>
+    </BrowserRouter>
+      
     </div>
   );
-}
+};
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
