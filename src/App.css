@@ -1,11 +1,54 @@
+
+body {
+  background-image: url('https://t4.ftcdn.net/jpg/02/00/90/53/360_F_200905394_2u1hKNTSawkcR6N1X0aX0PiSBR1tvUMn.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ff4d4d;
+  position: relative;
+}
+  
+
 .form-container {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8); 
+  border-radius: 12px;
+  box-shadow: 0 6px 12px 14px lightgray; 
+  text-align: center;
 }
+
+.form-container input, .form-container button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+
+.form-container button {
+  background-color: rgb(66, 66, 223);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* .form-container button:hover {
+  background-color: lightgrey; 
+} */
+
+
+.form-container input:focus {
+  outline: none;
+  border: 2px solid #ff4d4d; 
+  box-shadow: 0 0 8px rgba(255, 77, 77, 0.5); 
+}
+
+
 
 h2 {
   text-align: center;
