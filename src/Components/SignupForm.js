@@ -25,13 +25,14 @@ const Signup = () => {
       newErrors.email = 'Invalid email format';
     }
 
-    if (!mobileRegex.test(formData.mobile)) {
-      newErrors.mobile = 'Invalid mobile number';
-    }
 
     if (formData.password.length < 8) {
       newErrors.password = 'Password must be at least 8 characters';
     }
+
+    if (!mobileRegex.test(formData.mobile)) {
+        newErrors.mobile = 'Invalid mobile number';
+      }
 
     if (!formData.address) {
       newErrors.address = 'Address is required';
@@ -85,6 +86,17 @@ const Signup = () => {
 
         <div className="input-group">
           <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+          {errors.password && <p className="error-text">{errors.password}</p>}
+        </div>
+
+        <div className="input-group">
+          <input
             type="text"
             name="mobile"
             placeholder="Mobile"
@@ -94,16 +106,7 @@ const Signup = () => {
           {errors.mobile && <p className="error-text">{errors.mobile}</p>}
         </div>
 
-        <div className="input-group">
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={formData.password}
-            onChange={handleChange}
-          />
-          {errors.password && <p className="error-text">{errors.password}</p>}
-        </div>
+       
 
         <div className="input-group">
           <input
@@ -117,7 +120,7 @@ const Signup = () => {
         </div>
         <button type="submit">Signup</button>
      
-     <Link to={'/Login'}><h1>Login</h1></Link>
+     <Link to={'/Login'}><h4>Login</h4></Link>
       </form>
     </div>
   );

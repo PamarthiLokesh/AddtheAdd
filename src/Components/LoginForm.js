@@ -68,8 +68,9 @@ const Login = () => {
         </div>
 
         <button type="submit">Login</button>
-        
-        <Link to={'/'}> <h1>Signup</h1> </Link>
+
+        <Link to={'/'}> <h4>Signup</h4> </Link>
+        <Link to={'/ForgotPassword'}> <h4>Forgot Password</h4> </Link>
       </form>
 
       

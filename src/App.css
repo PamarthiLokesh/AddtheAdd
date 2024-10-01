@@ -14,20 +14,25 @@ h2 {
   color: #333;
 }
 
+h4 {
+  text-align: center;
+}
+
 .input-group {
   margin-bottom: 15px;
 }
 
 input {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
+  margin-left: 20px;
 }
 
 button {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background-color: #007bff;
   border: none;
@@ -35,6 +40,7 @@ button {
   color: white;
   font-size: 16px;
   cursor: pointer;
+  margin-left: 100px;
 }
 
 button:hover {
@@ -63,7 +69,43 @@ button:hover {
 .signup-link a:hover {
   text-decoration: underline; 
 }
+.forgot-password {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
+.forgot-password h2 {
+  text-align: center;
+}
+
+.forgot-password form {
+  display: flex;
+  flex-direction: column;
+}
+
+.forgot-password input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password button {
+  
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgot-password button:disabled {
+  background-color: #ccc;
+}
 }
 
 
